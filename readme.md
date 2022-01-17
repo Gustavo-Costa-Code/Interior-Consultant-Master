@@ -1,0 +1,2 @@
+<h1 align="center">interior-consultant-master</h1>
+<p align="center">Interior Consultant Master is a challenge from devchallenges, it is a beginner Responsive Web Developer challenge, using HTML, CSS and JS</p>

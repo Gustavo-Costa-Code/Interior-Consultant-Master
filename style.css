@@ -1,0 +1,370 @@
+/* Reset do CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 12px ;
+    background: #181719;
+
+}
+/* font-family: 'Crimson Pro', serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif; */
+
+/* Header */
+
+header {
+    padding-top: 42px;
+}
+
+header div {
+    width: 50%;
+    float: left;
+}
+
+header div h1{
+    font-family: 'Crimson Pro', serif;
+    padding: 8px;
+    border: 1px solid #fff;
+    width: 104px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    color: #fff;
+}
+
+header div ul {
+    list-style-position: inside;
+    text-align: right;
+}
+
+header div ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 86px;
+
+}
+
+header div ul li:first-of-type {
+    font-weight: 700;
+}
+
+header div ul li:last-of-type {
+    margin-right: 0;
+}
+
+header div ul li:first-of-type a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 8px;
+}
+
+header div ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header div:last-of-type img {
+    float: right;
+    width: 30px;
+}
+
+#openMenu {
+    display: none;
+    cursor: pointer;
+}
+
+#closeMenu {
+    display: none;
+    cursor: pointer;
+}
+
+/* Main */
+
+main {
+    margin-top: 169px;
+    height: calc(100% - 76px);
+}
+
+section {
+    float: left;
+    width: 30%;
+    padding-top:216px;
+}
+
+aside {
+    float: right;
+    width: 65%;
+}
+
+/* Aside */
+
+aside div {
+    width: 737px;
+    height: 555px;
+    float: right;
+    position: relative;
+    
+}
+aside div img {
+    width: 737px;
+    height: 555px;
+    float: right;
+    
+}
+
+aside div.card{
+    position: absolute;
+    height: 189px;
+    width: 410px;
+    background-color: white;
+    bottom: -100px;
+    right: 50px;
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+aside div.personal-informations {
+    width: 100%;
+    height: 50%;
+}
+
+aside div.comment {
+    width: 100%;
+    height: 50%;
+}
+
+aside div.personal-informations img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    float: left;
+    margin-left: 31px;
+    margin-top: 18px;
+}
+
+aside div.personal-informations h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 19px;
+    padding-top: 23px;
+    float: left;
+    width: 50%;
+}
+
+aside div.personal-informations h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    color: #828282;
+    padding-left: 19px;
+    padding-top: 8px;
+    float: left;
+    width: 50%;
+}
+
+aside div.comment p {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    color: #fff;
+    padding-left: 26px;
+}
+
+/* Section */
+
+section h1 {
+    font-family: 'Lora', serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+}
+
+section h2 {
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #fff;
+    font-style: normal;
+}
+
+section p {
+    color: #fff;
+    margin-top: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    float: left;
+    cursor: pointer;
+    font-style: normal;
+}
+
+section img {
+    float: left;
+    margin-left: 14px;
+    margin-top: 48px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    padding-bottom: 24px;
+    width: 100%;
+}
+
+footer h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    color: #A9A9A9;
+}
+
+footer h1 span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    color: #A9A9A9;
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media screen and (max-width:1300px){
+    #mainMenu {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        background-color: #181719;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: top 1s ease;
+        display: none;
+    }
+    #mainMenu li{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-right: 0;
+        font-size: 25px;
+    }
+
+    #openMenu{
+        display: block;
+    }
+    
+    #closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    aside, section {
+        width: 100%;
+    }
+    section h2 {
+        width: 500px
+    }
+    aside div{
+        width: 100%;
+    }
+    aside div img[src="imgs/photo1.png"] {
+        width: 100%;
+        height: 100%;
+    }
+
+    main {
+        margin-top: 45px;
+    }
+    footer {
+        margin-top: 400px;
+    }
+}
+
+@media screen and (max-width:680px){
+    section h1 {
+        font-size: 36px;
+    }
+    section h2 {
+        width: 250px;
+        font-size: 14px;
+    }
+    aside div img[src="imgs/photo1.png"] {
+        width: 100%;
+        height: 70%;
+    }
+    aside div{
+        height: 70%;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    aside div img[src="imgs/photo1.png"] {
+        width: 100%;
+        height: 50%;
+    }
+    aside div{
+        height: 50%;
+    }
+    aside div.card {
+        width: 300px;
+        height: 138px;
+        right: 30px;
+    }
+    aside div.card img{
+        width: 36px;
+        height: 36px;
+        margin-left: 22px;
+    }
+    aside div.card div.personal-informations h1{
+        font-size: 12px;
+    }
+    aside div.card div.personal-informations h2{
+        font-size: 10px;
+    }
+    aside div.card div:last-of-type p{
+        font-size: 14px;
+    }
+    section img {
+        width: 16px;
+    }
+    section p {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+    footer {
+        margin-top: 200px;
+    }
+}
