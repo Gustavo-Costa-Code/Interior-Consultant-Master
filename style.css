@@ -330,9 +330,6 @@ footer h1 span {
     aside div{
         height: 70%;
     }
-    footer {
-        margin-top: 600px;
-    }
 }
 
 @media screen and (max-width:500px){
@@ -370,6 +367,6 @@ footer h1 span {
         font-size: 14px;
     }
     footer {
-        margin-top: 200px;
+        margin-top: 400px;
     }
 }
